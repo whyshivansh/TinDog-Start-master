@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .custom-card {
+      width: 400px;
+      height: 500px;
+      margin: 0; /* Remove margin */
+      padding: 0; /* Remove padding */
+      position: relative; /* Add position relative */
+    }
+    .custom-card .card-img-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure image covers entire area */
+    }
+    .custom-card .card-body {
+      position: absolute; /* Add position absolute */
+      bottom: 0; /* Position at the bottom */
+      left: 0; /* Align with the left edge */
+      width: 100%; /* Take full width */
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      color: white; /* Text color */
+      padding: 10px; /* Add some padding */
+    }
+    .card-title,
+    .card-text,
+    .btn {
+      position: relative;
+      z-index: 1; /* Ensure all text appears above image */
+    }
+  body{
+    background-color:#ff4c68;
+  }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">tindog</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="card.html">Dogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signup.html">Signup</a>
+      </li>
+    </ul>
+ </div>
+</nav>
+<div class="center">
+  <div class="card custom-card">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/small-fluffy-dog-breeds-shih-tzu-1622652006.jpg?crop=0.606xw:0.799xh;0.394xw,0.201xh&resize=1200:*" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sugar</h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <button type="button" class="btn btn-primary">Like</button>
+      <button type="button" class="btn btn-secondary">Comment</button>
+    </div>
+  </div>
+</div>
+<div class="center">
+    <div class="card custom-card">
+      <img src="https://media.cnn.com/api/v1/images/stellar/prod/201030094143-stock-rhodesian-ridgeback.jpg?q=w_2187,h_1458,x_0,y_0,c_fill" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Seige</h5>
+        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        <button type="button" class="btn btn-primary">Like</button>
+        <button type="button" class="btn btn-secondary">Comment</button>
+      </div>
+    </div>
+  </div>
+  <div class="center">
+    <div class="card custom-card">
+      <img src="https://www.thesprucepets.com/thmb/y4YEErOurgco9QQO-zJ6Ld1yVkQ=/3000x0/filters:no_upscale():strip_icc()/english-dog-breeds-4788340-hero-14a64cf053ca40f78e5bd078b052d97f.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Fluffy</h5>
+        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        <button type="button" class="btn btn-primary">Like</button>
+        <button type="button" class="btn btn-secondary">Comment</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
